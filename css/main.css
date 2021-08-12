@@ -163,10 +163,11 @@ header{
 }
 .topMenu a{
     display: block;
-    margin-right: 47px;
+    margin-right: 35px;
     padding-top: 13px;
     position: relative;
     color: #777;
+    font-size: 14px;
 }
 .topMenuLine::after{
     content: "";
@@ -174,7 +175,7 @@ header{
     height: 15px;
     width: 1px;
     border-right: 1px solid #777;
-    right: -23px;
+    right: -19px;
 }
 .mainMenu{
     display: flex;
@@ -189,6 +190,7 @@ header{
 .mainMenu li> a{
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: -.5px;
 }
 .mainDepmenu{
     width: 100%;
@@ -206,6 +208,8 @@ header{
     line-height: 35px;
     text-align: center;
     color: #fff;
+    font-size: 15px;
+    font-weight: 300;
 }
 .mainMenu li:hover .mainDepmenu{
     display: block;
@@ -285,18 +289,23 @@ main{
     width: 80%;
     height: 30px;
     margin-left: 10%;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     overflow: hidden;
+    position: relative;
+    top: 25px;
 }
 #mainBoard {
     width: 100%;
     height: 90px;
+    position: absolute;
+    top: 0;
 }
 #mainBoard ul{
     width: 100%;
     height: 30px;
     display: flex;
     justify-content: space-between;
+    background-color: #b20839;
 }
 #mainBoard li{
     width: 45%;
@@ -306,6 +315,7 @@ main{
     justify-content: space-between;
     font-size: 1.025rem;
     color: #fff;
+    background-color: #b20839;
 }
 #mainBoard p{
     align-items: flex-end;
@@ -372,20 +382,26 @@ main{
 #hollysSearch{
     width: 100%;
     height: 650px;
-    background: url('../img/hollysSearch.jpg');
+    /* background: url('../img/hollysSearch.jpg'); */
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-color: #fbf4e8;
 }
 #hollysSearchWrap{
     width: 90%;
     margin-left: 5%;
     height: 100%;
+    display: flex;
 }
-#hollysSearchWrap > div{
+.hollysSearchLeft, .hollysSearchRight{
     width: 50%;
     height: 100%;
-    float: right;
     position: relative;
+}
+.hollysSearchLeft img{
+    width: 85%;
+    position: absolute;
+    top: 120px;
 }
 .hollysSearchTxt{
     position: absolute;
@@ -393,17 +409,19 @@ main{
 }
 .hollysSearchTxt span{
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 .hollysSearchTxt h2{
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 15px;
+    color: #b20839;
 }
 .hollysSearchTxt p{
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 35px;
+    line-height: 140%;
 }
 .searchBtn{
     display: flex;
@@ -469,6 +487,8 @@ main{
 footer{
     width: 100%;
     overflow: hidden;
+    background-color: #dfdfdf;
+    margin-top: 50px;
 }
 #footerWrap{
     width: 80%;
@@ -487,17 +507,43 @@ footer{
 .leftFooter li{
     margin-top: 8px;
     padding: 5px 13px;
+    color: #555;
+}
+.leftFooter span{
+    cursor: pointer;
 }
 .rightFooter{
     display: flex;
     width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.hollysLive{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 25px;
+    margin-top: 2px;
+    color: #333;
+}
+.snsImg{
+    margin-left: 5px;
 }
 #bottomFooter{
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    color: rgb(121, 121, 121);
+    font-size: 14px;
 }
 #bottomFooter p{
     line-height: 130%;
-    margin-top: 10px;
+    margin-top: 20px;
+    line-height: 140%;
+}
+#bottomFooter p span{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
 }
