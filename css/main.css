@@ -177,6 +177,12 @@ header{
     border-right: 1px solid #777;
     right: -19px;
 }
+#hiddenToggle{
+    display: none;
+}
+#hiddenMainMenu{
+    display: none;
+}
 .mainMenu{
     display: flex;
 }

@@ -1,0 +1,25 @@
+{
+  "name": "HOLLYS",
+  "version": "1.0.0",
+  "description": "- 레이아웃 & 사용효과 : [탐앤탐스](https://tomntoms.com/main/main.html)   \r - 주제/내용 : [할리스커피](https://www.hollys.co.kr/)   \r - 메인 컬러: 기존 할리스의 #BA000C 색상 사용",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimdus1214/HOLLYS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimdus1214/HOLLYS/issues"
+  },
+  "homepage": "https://github.com/kimdus1214/HOLLYS#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}

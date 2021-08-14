@@ -1,0 +1,196 @@
+@media screen and (min-width:760px) and (max-width:1200px){
+    #wrap{
+        width: 100%;
+        height: 100%;
+        position : relative;
+        top : 80px;
+    }
+    header{
+        height: 80px;
+    }
+    #logo{
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+    #hiddenToggle{
+        display: block;
+        height: 80px;
+        width: 50px;
+        font-size: 40px;
+        line-height: 80px;
+    }
+    #mainMenuWrap{
+        display: none;
+    }
+    #hiddenMainMenu{
+        width: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        height: 100vh;
+        position: absolute;
+        top: -80px;
+        right: 0;
+        z-index: 9999;
+    }
+    .hiddenMainMenuNone{
+        display: none;
+    }
+    #hiddenMainMenuWrap{
+        width: 60%;
+        position: absolute;
+        right: -60%;
+    }
+    .hiddenMenuX{
+        width: 6%;
+        float: left;
+        font-size: 40px;
+        color: rgba(255, 255, 255, .5);
+    }
+    #hiddenMainMenu ul{
+        width: 94%;
+        height: 100vh;
+        background-color: #ddd;
+        float: right;
+    }
+    #hiddenMainMenu li{
+        width: 100%;
+        /* height: 40px; */
+        line-height: 40px;
+    }
+    .hiddenHollys{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .hiddenTopMenu{
+        border-bottom: 1px solid rgb(194, 194, 194);
+    }
+    .hiddenTopMenu div{
+        text-align: center;
+    }
+    .hiddenTopMenu div a{
+        font-size: 16px;
+    }
+    .hiddenTopMenu div span{
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: (194, 194, 194);
+        position: relative;
+        top: -1.6px;
+    }
+    .hiddenMenu{
+        height: 40px;
+        overflow: hidden;
+    }
+    .hiddenMenu > a{
+        display: block;
+        height: 40px;
+        border-bottom: 1px solid rgb(194, 194, 194);
+    }
+    .hiddenMenuActive{
+        background-color: #ba000c;
+        color: #fff;
+        border-bottom: none;
+    }
+    .hiddenMenu a{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .hiddenMenu a i{
+        float: right;
+        margin-top: 15px;        
+    }
+    .hiddenDepmenu{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        display: none;
+    }
+    .hiddenDepmenu a{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /* HOLLYS MENU Start */
+    /* 여기서부터 */
+
+    /* HOLLYS MENU End */
+   
+    
+
+    /* hollysSearch Start */
+    #hollysSearch{
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #fbf4e8;
+    }
+    #hollysSearchWrap{
+        width: 90%;
+        margin-left: 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hollysSearchLeft, .hollysSearchRight{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .hollysSearchLeft img{
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+    .hollysSearchTxt{
+        position: absolute;
+        top: 20px;
+        text-align: center;
+        left: 50%;
+        margin-left: -292.5px;
+    }
+    .hollysSearchTxt span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .hollysSearchTxt h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 15px;
+        color: #b20839;
+    }
+    .hollysSearchTxt p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 35px;
+        line-height: 140%;
+    }
+    .searchBtn{
+        display: flex;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -243px;
+    }
+    .searchBtn a{
+        display: block;
+        width: 145px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border: 1px solid #b20839;
+        margin-right: 15px;
+    }
+    .searchBtn a:hover{
+        transition-delay: 0s !important;
+        transition: .5s;
+        background-color: #b20839;
+        color: #fff;
+    }
+    /* hollysSearch End */
+
+}

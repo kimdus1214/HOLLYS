@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tablet.css">
 </head>
 
 <body>
@@ -23,6 +25,7 @@
         <header>
             <div id="headerWrap">
                 <div id="logo"><img src="img/logo.png"></div>
+                <div id="hiddenToggle"><i class="fas fa-bars"></i></div>
                 <div id="mainMenuWrap">
                     <div class="topMenu">
                         <a class="topMenuLine" href="javascript:void(0)">가맹문의</a>
@@ -81,6 +84,72 @@
                 </div>
             </div>
         </header>
+
+        <!-- tablet,mobile hidden menu Start -->
+        <div id="hiddenMainMenu" class="hiddenMainMenuNone">
+            <div id="hiddenMainMenuWrap">
+            <div class="hiddenMenuX"><i class="far fa-times"></i></div>
+            <ul>
+                <li class="hiddenHollys">HOLLYS</li>
+                <li class="hiddenTopMenu">
+                    <div>
+                        <a href="javascript:void(0)">가맹문의<span>|</span></a>
+                        <a href="javascript:void(0)">아카데미<span>|</span></a>
+                        <a href="javascript:void(0)">고객센터</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">MENU<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">신메뉴</a>
+                        <a href="javascript:void(0)">음료</a>
+                        <a href="javascript:void(0)">푸드</a>
+                        <a href="javascript:void(0)">MD</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">SERVICE<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">가맹점 개설문의</a>
+                        <a href="javascript:void(0)">할리스 멤버쉽</a>
+                        <a href="javascript:void(0)">스마트오더</a>
+                        <a href="javascript:void(0)">아카데미</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">EVENT<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">이벤트</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">STORE<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">매장검색</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">HOLLIS MALL<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">할리스콘</a>
+                        <a href="javascript:void(0)">할리스카드</a>
+                        <a href="javascript:void(0)">구매내역</a>
+                    </div>
+                </li>
+                <li class="hiddenMenu">
+                    <a href="javascript:void(0)">HOLLYS<i class="far fa-chevron-down"></i></a>
+                    <div class="hiddenDepmenu">
+                        <a href="javascript:void(0)">할리스소개</a>
+                        <a href="javascript:void(0)">공지사항</a>
+                        <a href="javascript:void(0)">채용안내</a>
+                        <a href="javascript:void(0)">찾아오시는 길</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+        <!-- tablet,mobile hidden menu End -->
 
         <main>
             <div class="swiper-container mySwiper">
@@ -308,6 +377,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/js/board.js"></script>
+    <script src="/js/menu.js"></script>
 
 </body>
 
