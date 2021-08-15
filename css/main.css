@@ -348,34 +348,47 @@ main{
 .title span{
     font-weight: 600;
 }
+#hollysMenuWrap{
+    margin-bottom: 50px;
+}
 .maskWrap{
     width: 90%;
-    height: 570px;
     margin-left: 5%;
     overflow: hidden;
     position: relative;
 }
-.imgWrap{
-    width: calc(33.33% * 6);
-    height: 100%;
-    display: flex;
+.maskWrap span{
     position: absolute;
-    left: 0;
-}
-/* .imgWrap div{
-    width: 100%;
-    height: 520px;
-    overflow: hidden;
-} */
-.imgWrap img{
-    width: 100%;
-    height: auto;
+    top: 50%;
+    font-size: 35px;
+    color: #b20839;
+    font-size: 35px;
+    margin-top: -36px;
+    z-index: 999;
+    opacity: .7;
     cursor: pointer;
 }
-/* .imgWrap img:hover{
-    transition: .5s;
-    transform: scale(1.2);
-} */
+.maskWrap span:hover{
+    opacity: 1;
+}
+.slideLeftBtn{
+    left: 1%;
+}
+.slideRightBtn{
+    right: 1%;
+}
+.imgWrap{
+    width: calc(33.33% * 6);
+    /* height: 100%; */
+    display: flex;
+    position: relative;
+    left: 0;
+}
+.imgWrap img{
+    width: 100%;
+    /* height: 100%; */
+    cursor: pointer;
+}
 .imgWrapTxt{
     text-align: center;
     height: 50px;
@@ -442,6 +455,7 @@ main{
     text-align: center;
     border: 1px solid #b20839;
     margin-right: 15px;
+    box-sizing: border-box;
 }
 .searchBtn a:hover{
     transition-delay: 0s !important;
@@ -453,6 +467,10 @@ main{
 
 
 /* hollysMdPick Start */
+#hollysMdPickWrap{
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+}
 #hollysMdPick{
     width: 100%;
     overflow: hidden;

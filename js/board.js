@@ -20,5 +20,4 @@ $(document).ready(function(){
             boardMoveAuto();
         }
     });
-    console.log('1');
 });

@@ -5,7 +5,7 @@ $(document).ready(function () {
             $('#hiddenMainMenuWrap').stop().animate({
                 right:0
             },500);
-            $('#hiddenMainMenuWrap, header').on('scroll touchmove mousewheel', function(event) {
+            $('#hiddenMainMenuWrap, #hiddenMainMenu').on('scroll touchmove mousewheel', function(event) {
                 event.preventDefault();
                 event.stopPropagation();
                 return false;
@@ -15,7 +15,7 @@ $(document).ready(function () {
             $('#hiddenMainMenuWrap').stop().animate({
                 right:'-50%'
             },500);
-            $('#hiddenMainMenuWrap, header').off('scroll touchmove mousewheel'); 
+            $('#hiddenMainMenuWrap, #hiddenMainMenu').off('scroll touchmove mousewheel'); 
         }
     });
     $('.hiddenMenuX').click(function(){
