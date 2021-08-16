@@ -49,6 +49,8 @@
         float: left;
         font-size: 40px;
         color: rgba(255, 255, 255, .5);
+        position: absolute;
+        left: -15px;
     }
     #hiddenMainMenu ul{
         width: 94%;
@@ -110,13 +112,79 @@
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
-        display: none;
     }
     .hiddenDepmenu a{
         display: block;
         height: 40px;
         line-height: 40px;
     }
+    @media screen and (max-width:460px){
+        #wrap{
+            top : 60px;
+        }
+        #headerWrap{
+            height: 60px;
+        }
+        #logo{
+            width: 50px;
+            height: 50px;
+        }
+        #hiddenToggle{
+            display: block;
+            height: 60px;
+            width: 50px;
+            font-size: 36px;
+            line-height: 60px;
+        }
+        #hiddenMainMenuWrap{
+            width: 100%;
+        }
+        .hiddenMenuX{
+            left: 5px;
+            color: #666;
+        }
+        #hiddenMainMenu ul{
+            width: 100%;
+        }
+
+        #mainBoardWrap{
+            height: 60px;
+        }
+        #mainBoardMask{
+            top: 15px;
+        }
+        #mainBoard li{
+            font-size: 0.825rem;
+        }
+
+        
+        #hollysMenu{
+            margin-top: 35px;
+        }
+        #hollysMenuWrap{
+            margin-bottom: 35px;
+        }
+        .title h2 {
+            font-size: 18px;
+        }
+        .imgWrapTxt{
+            font-size: 1rem;
+        }
+        .imgWrap{
+            width: calc(100% * 6) !important;
+        }
+
+
+        #hollysMdPick{
+            margin-top: 35px;
+        }
+        #hollysMdPickWrap{
+            margin-bottom: 35px;
+        }
+    }
+
+
+
 
     /* HOLLYS MENU Start */
     .imgWrap{
@@ -132,6 +200,7 @@
     /* hollysSearch Start */
     #hollysSearch{
         width: 100%;
+        height: auto;
         overflow: hidden;
         padding-bottom: 50px;
         padding-top: 50px;
@@ -148,6 +217,10 @@
         width: 100%;
         height: 50%;
         overflow: hidden;
+        margin-top: 0;
+    }
+    .hollysSearchLeft{
+        margin-top: 50px;
     }
     .hollysSearchLeft img{
         width: 90%;
@@ -163,7 +236,7 @@
         width: 100%;
     }
     .hollysSearchTxt span{
-        font-size: 1rem;
+        font-size: 0.93rem;
         font-weight: 400;
     }
     .hollysSearchTxt h2{

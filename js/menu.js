@@ -28,12 +28,13 @@ $(document).ready(function () {
 
     $('.hiddenMenu').click(function(){
         var open = $(this).height();
-        if(open==0){
-            open.css('height','auto');
-            var openHiddenDepmenu = $('.hiddenMenu').not($(this)).css('height');
+        console.log(open);
+        if(open==40){
+            $(this).css('height','auto');
+            var openHiddenDepmenu = $('.hiddenMenu').not(this).height();
             console.log(openHiddenDepmenu);
-            if(openHiddenDepmenu > 40){
-                $('.hiddenMenu').not($(this)).animate({
+            if(openHiddenDepmenu != 40){
+                $('.hiddenMenu').not(this).animate({
                     height: 40
                 });
             }
