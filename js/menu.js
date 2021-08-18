@@ -28,11 +28,12 @@ $(document).ready(function () {
 
     $('.hiddenMenu').click(function(){
         var open = $(this).height();
-        console.log(open);
+        // console.log(open);
         if(open==40){
             $(this).css('height','auto');
-            var openHiddenDepmenu = $('.hiddenMenu').not(this).height();
-            console.log(openHiddenDepmenu);
+            $(this).find('>a').addClass('hiddenMenuActive');
+            var openHiddenDepmenu = $('.hiddenMenu').not(this).css('height');
+            // console.log(openHiddenDepmenu);
             if(openHiddenDepmenu != 40){
                 $('.hiddenMenu').not(this).animate({
                     height: 40
@@ -40,6 +41,7 @@ $(document).ready(function () {
             }
         }else{
             $(this).css('height','40px');
+            $(this).find('>a').removeClass('hiddenMenuActive');
         }
     });
 

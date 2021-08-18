@@ -1,4 +1,4 @@
-@media screen and (max-width:760px){
+@media screen and (max-width:760px){   
     #wrap{
         width: 100%;
         height: 100%;
@@ -118,6 +118,12 @@
         height: 40px;
         line-height: 40px;
     }
+    .swiper-button-next::after, .swiper-button-prev::after{
+        font-size: 20px;
+    }
+    .maskWrap span{
+        font-size: 20px;
+    }
     @media screen and (max-width:460px){
         #wrap{
             top : 60px;
@@ -146,7 +152,6 @@
         #hiddenMainMenu ul{
             width: 100%;
         }
-
         #mainBoardWrap{
             height: 60px;
         }

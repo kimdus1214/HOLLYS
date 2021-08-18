@@ -11,7 +11,7 @@ app.set('layout', './index');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res)=>{
-    res.render('index', {title: 'HOLLYS'});
+    res.render('main', {title: 'HOLLYS'});
 })
 
 app.listen(port, ()=>{
