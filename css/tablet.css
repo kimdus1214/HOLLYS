@@ -91,11 +91,13 @@
         display: block;
         height: 40px;
         border-bottom: 1px solid rgb(194, 194, 194);
+        border-top: 1px solid rgb(194, 194, 194);
     }
     .hiddenMenuActive{
         background-color: #ba000c;
         color: #fff;
         border-bottom: none;
+        border-top:none;
     }
     .hiddenMenu a{
         padding-left: 20px;
@@ -107,14 +109,15 @@
         margin-top: 15px;        
     }
     .hiddenDepmenu{
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
+        background-color: #fff;
     }
     .hiddenDepmenu a{
         display: block;
+        margin-left: 20px;
+        margin-right: 20px;
         height: 40px;
         line-height: 40px;
+        box-sizing: border-box;
     }
 
     /* HOLLYS MENU Start */

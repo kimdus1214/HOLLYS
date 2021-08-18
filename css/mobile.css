@@ -109,14 +109,15 @@
         margin-top: 15px;        
     }
     .hiddenDepmenu{
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
+        background-color: #fff;
     }
     .hiddenDepmenu a{
         display: block;
+        margin-left: 20px;
+        margin-right: 20px;
         height: 40px;
         line-height: 40px;
+        box-sizing: border-box;
     }
     .swiper-button-next::after, .swiper-button-prev::after{
         font-size: 20px;

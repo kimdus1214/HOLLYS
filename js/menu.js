@@ -28,16 +28,17 @@ $(document).ready(function () {
 
     $('.hiddenMenu').click(function(){
         var open = $(this).height();
-        // console.log(open);
         if(open==40){
             $(this).css('height','auto');
             $(this).find('>a').addClass('hiddenMenuActive');
             var openHiddenDepmenu = $('.hiddenMenu').not(this).css('height');
-            // console.log(openHiddenDepmenu);
+            $(this).find('i').toggleClass('fa-chevron-up');
             if(openHiddenDepmenu != 40){
                 $('.hiddenMenu').not(this).animate({
                     height: 40
                 });
+                $('.hiddenMenu').not(this).find('>a').removeClass('hiddenMenuActive');
+                $('.hiddenMenu').not(this).find('i').removeClass('fa-chevron-up');
             }
         }else{
             $(this).css('height','40px');
